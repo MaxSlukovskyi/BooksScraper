@@ -10,4 +10,5 @@ public interface BookService {
 
     List<BookDto> getBooksByTitle(String title);
 
+    void deleteAllScrapedBooks();
 }

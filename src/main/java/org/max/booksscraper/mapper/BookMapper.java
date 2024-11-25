@@ -9,6 +9,5 @@ import org.max.booksscraper.model.dto.BookDto;
 public interface BookMapper {
 
     Book toBook(BookDto bookDto);
-
     BookDto toBookDto(Book book);
 }

@@ -1,10 +1,10 @@
-package org.max.booksscraper.service;
+package org.max.booksscraper.scraper;
 
 import java.util.List;
 
 public interface Scraper<T> {
 
-    void scrape();
+    void scrape(boolean pagination);
 
     List<T> getItems();
 }

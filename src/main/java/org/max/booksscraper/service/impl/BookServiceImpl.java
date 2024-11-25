@@ -29,4 +29,9 @@ public class BookServiceImpl implements BookService {
                 .map(bookMapper::toBookDto)
                 .toList();
     }
+
+    @Override
+    public void deleteAllScrapedBooks() {
+        bookRepository.deleteAll();
+    }
 }

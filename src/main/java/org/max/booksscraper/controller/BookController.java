@@ -3,10 +3,8 @@ package org.max.booksscraper.controller;
 import lombok.RequiredArgsConstructor;
 import org.max.booksscraper.model.dto.BookDto;
 import org.max.booksscraper.service.BookService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.max.booksscraper.scraper.ScraperService;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -15,6 +13,7 @@ import java.util.List;
 @RequestMapping("/api/books")
 public class BookController {
 
+    private final ScraperService scraperService;
     private final BookService bookService;
 
     @GetMapping
@@ -25,5 +24,20 @@ public class BookController {
     @GetMapping("/{title}")
     public List<BookDto> getBooksByTitle(@RequestParam("title") String title) {
         return bookService.getBooksByTitle(title);
+    }
+
+    @PostMapping("/scraper")
+    public void scrapeBooksFromFirstPage() {
+        scraperService.scrapeBooksFromFirstPage();
+    }
+
+    @PostMapping("/scraper/all")
+    public void scrapeBooksFromAllPages() {
+        scraperService.scrapeBooksFromAllPages();
+    }
+
+    @DeleteMapping
+    public void deleteAllScrapedBooks() {
+        bookService.deleteAllScrapedBooks();
     }
 }
