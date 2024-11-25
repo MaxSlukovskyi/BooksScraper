@@ -1,9 +1,9 @@
-package org.max.booksscraper.mapper;
+package org.max.booksscraper.data.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
-import org.max.booksscraper.model.Book;
-import org.max.booksscraper.model.dto.BookDto;
+import org.max.booksscraper.data.model.Book;
+import org.max.booksscraper.data.model.dto.BookDto;
 
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface BookMapper {

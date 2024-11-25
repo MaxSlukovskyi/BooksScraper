@@ -1,0 +1,6 @@
+spring.application.name=BooksScraper
+server.port=8080
+spring.datasource.url={your_datasource_url}
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.hibernate.ddl-auto=update
+scraper.books.url=https://books.toscrape.com/

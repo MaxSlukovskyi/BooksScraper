@@ -1,9 +1,10 @@
 package org.max.booksscraper.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.max.booksscraper.model.dto.BookDto;
-import org.max.booksscraper.service.BookService;
+import org.max.booksscraper.data.model.dto.BookDto;
 import org.max.booksscraper.scraper.ScraperService;
+import org.max.booksscraper.scraper.impl.books.BookScraper;
+import org.max.booksscraper.service.BookService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -27,12 +28,12 @@ public class BookController {
     }
 
     @PostMapping("/scraper")
-    public void scrapeBooksFromFirstPage() {
+    public void saveBooksFromFirstPage() {
         scraperService.scrapeBooksFromFirstPage();
     }
 
     @PostMapping("/scraper/all")
-    public void scrapeBooksFromAllPages() {
+    public void saveBooksFromAllPages() {
         scraperService.scrapeBooksFromAllPages();
     }
 

@@ -1,12 +1,12 @@
 package org.max.booksscraper.scraper;
 
-import org.max.booksscraper.model.dto.BookDto;
+import org.max.booksscraper.data.model.dto.BookDto;
 
 import java.util.List;
 
 public interface ScraperService {
 
-    List<BookDto> scrapeBooksFromFirstPage();
+    void scrapeBooksFromFirstPage();
 
-    List<BookDto> scrapeBooksFromAllPages();
+    void scrapeBooksFromAllPages();
 }

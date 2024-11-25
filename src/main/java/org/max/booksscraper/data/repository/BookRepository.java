@@ -1,6 +1,6 @@
-package org.max.booksscraper.repository;
+package org.max.booksscraper.data.repository;
 
-import org.max.booksscraper.model.Book;
+import org.max.booksscraper.data.model.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

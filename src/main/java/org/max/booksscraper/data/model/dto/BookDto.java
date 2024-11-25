@@ -1,4 +1,4 @@
-package org.max.booksscraper.model.dto;
+package org.max.booksscraper.data.model.dto;
 
 import lombok.Data;
 
@@ -6,7 +6,7 @@ import lombok.Data;
 public class BookDto {
 
     private String title;
-    private Double price;
+    private String price;
     private String availability;
     private Integer rating;
 }
