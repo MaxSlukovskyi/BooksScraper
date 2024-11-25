@@ -13,6 +13,6 @@ public class Book {
     private Long id;
     private String title;
     private Double price;
-    private Boolean availability;
+    private String availability;
     private Integer rating;
 }
