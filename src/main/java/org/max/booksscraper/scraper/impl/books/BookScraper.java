@@ -6,7 +6,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.max.booksscraper.data.model.Book;
 import org.max.booksscraper.data.model.dto.BookDto;
 import org.max.booksscraper.scraper.Scraper;
 import org.max.booksscraper.service.BookService;

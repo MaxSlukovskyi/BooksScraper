@@ -5,7 +5,6 @@ import org.max.booksscraper.data.mapper.BookMapper;
 import org.max.booksscraper.data.model.Book;
 import org.max.booksscraper.data.model.dto.BookDto;
 import org.max.booksscraper.data.repository.BookRepository;
-import org.max.booksscraper.scraper.ScraperService;
 import org.max.booksscraper.service.BookService;
 import org.springframework.stereotype.Service;
 
